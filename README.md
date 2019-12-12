@@ -77,7 +77,7 @@ Form inputs in React come with specific events. `onChange` will fire every time
 the value of an input changes. In our example, we're invoking an anonymous
 function that accepts `event` as its argument. The `event` data being passed in
 is automatically provided by the `onChange` event listener.
-
+  
 The anonymous functions are almost identical, but they actually call two
 different functions, `this.handleFirstNameChange()` and
 `this.handleLastNameChange()`, passing the `event` as an argument. Let's write out
@@ -104,7 +104,7 @@ particular `input`!
 
 Keep in mind, **this is not the value we provided from state**. When we read
 `event.target.value`, we get whatever content is present when the event fired.
-In the case of our first input, that would be a combination of whatever
+In the case of our first input, that would be a co mbination of whatever
 `this.state.firstName` is equal to _plus_ **the last key stroke**. If you
 pressed 's', `event.target.value` would equal "Johns".
 
